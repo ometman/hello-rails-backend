@@ -1,7 +1,8 @@
-class GreetingsController < ApplicationController
+class Api::GreetingsController < ApplicationController
     skip_before_action :verify_authenticity_token
 
     def random_message
-        render json: Greeting.order("RANDOM()").first
+        greeting = Greeting.order("RANDOM()").first
+        render json: greeting.message
     end
 end

@@ -6,9 +6,8 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   namespace :api do
-    resource :greetings, to: 'greetings#random_message'
+    resource :greetings, to: 'greetings#random'
   end
   # Defines the root path route ("/")
-  root "static#index"
-  get '*path', to: 'static#index', via: :all
+  root "api/greetings#random"
 end

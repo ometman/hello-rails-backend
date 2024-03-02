@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   namespace :api do
     resource :greetings, to: 'greetings#random'
   end
+
   # Defines the root path route ("/")
   root "api/greetings#random"
 end

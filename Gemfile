@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 
 ruby '3.3.0'
@@ -70,3 +68,4 @@ group :test do
 end
 
 gem 'rack-cors'
+gem 'rubocop', '>= 1.0', '< 2.0'

@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
-# Greetings controller under Api
+# Controller responsible for handling greetings API endpoints.
+# This controller provides functionality to random greeting.
 module Api
   class GreetingsController < ApplicationController
     skip_before_action :verify_authenticity_token

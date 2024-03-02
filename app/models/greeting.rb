@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # app/models/greeting.rb
 class Greeting < ApplicationRecord
   # Validations
